@@ -8,16 +8,10 @@ document.querySelector('img.img2').setAttribute('src', "images/dice" + randomNum
 let message = "";
 if (randomNumber1 > randomNumber2) {
   message = "🚩 Player 1 wins";
-  // document.querySelector('img.flag2').classList.add('hidden');
 } else if (randomNumber1 < randomNumber2) {
   message = "Player 2 wins 🚩";
-  // document.querySelector('img.flag1').classList.add('hidden');
 } else {
   message = "Draw";
-  // document.querySelector('img.flag1').classList.add('hidden');
-  // document.querySelector('img.flag2').classList.add('hidden');
-  // document.querySelector('h1').classList.add('all-line');
-
 }
 
-document.querySelector('h1').innerHTML = message;
+document.querySelector('h2').innerHTML = message;
